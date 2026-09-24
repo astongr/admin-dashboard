@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Wrapper for whole page to make grid with 2 columns -min height: 100vh-->
+    <div class="container">
+
+<!--sidebar and h2 to be in this section-->
+
+<aside class="sidebar">
+
+
+        <h1>Dashboard</h1>
+
+        <nav>
+
+            
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Communities</a></li>
+                
+            </ul>
+
+            <ul>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Privacy</a></li>
+                
+            </ul>
+
+
+        </nav>
+</aside>
+
+<!--header section, multiple flex containers-->
+<header>
+    <div class="top-row">
+    <div class="search-bar">
+        <img class="symbol" src="magnify.svg" alt="">
+        <input type="search" id="site-search" name="search">
+        
+
+    </div>
+
+    <div class="notification">
+        <img class="symbol" src="bell-ring-outline.svg" alt="">
+        <img src="user-logo.svg" alt="">
+        <p>Aston Godwin-Ross</p>
+
+
+    </div>
+    </div>
+<div class="bottom-row">
+    <div class="welcome">
+        <div>
+        <img class="symbol" src="user-logo.svg" alt="">
+        </div>
+        <div>
+        <p class="hi">Hi there,</p>
+        <p>Aston Godwin-Ross (@AGR)</p>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+    </div>
+</div>
+    
+</header>
+
+<!--main section with cards and your projects in one container and side container as column-->
+
+<main>
+    <div class="main-cards">
+
+        <h2>Your Projects</h2>
+
+<div class="card-grid">
+        <div class="cards">
+            <p class="card-title">Super Cool Project</p>
+            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+
+            <div class="card-icons">
+                <img class="symbol" src="star-plus-outline.svg" alt="Favourite">
+                <img class="symbol" src="eye-plus-outline.svg" alt="Watch">
+                <img class="symbol" src="share-variant-outline.svg" alt="Share">
+            </div>
+        </div>
+
+                <div class="cards">
+            <p class="card-title">Less Cool Project</p>
+            <p>Nullam condimentum ipsum ut lectus vehicula consectetur sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus. </p>
+
+            <div class="card-icons">
+                <img class="symbol" src="star-plus-outline.svg" alt="Favourite">
+                <img class="symbol" src="eye-plus-outline.svg" alt="Watch">
+                <img class="symbol" src="share-variant-outline.svg" alt="Share">
+            </div>
+            </div>
+            
+
+            <div class="cards">
+            <p class="card-title">Impossible App</p>
+            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+
+            <div class="card-icons">
+                <img class="symbol" src="star-plus-outline.svg" alt="Favourite">
+                <img class="symbol" src="eye-plus-outline.svg" alt="Watch">
+                <img class="symbol" src="share-variant-outline.svg" alt="Share">
+            </div>
+            </div>
+
+            <div class="cards">
+            <p class="card-title">Easy Peasy App</p>
+            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum disnissium urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+
+            <div class="card-icons">
+                <img class="symbol" src="star-plus-outline.svg" alt="Favourite">
+                <img class="symbol" src="eye-plus-outline.svg" alt="Watch">
+                <img class="symbol" src="share-variant-outline.svg" alt="Share">
+            </div>
+            </div>
+
+            <div class="cards">
+            <p class="card-title">Ad Blocker</p>
+            <p>Quisque eget trutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra henderit felis. Aliquam sed malesuada eros.</p>
+
+            <div class="card-icons">
+                <img class="symbol" src="star-plus-outline.svg" alt="Favourite">
+                <img class="symbol" src="eye-plus-outline.svg" alt="Watch">
+                <img class="symbol" src="share-variant-outline.svg" alt="Share">
+            </div>
+            </div>
+
+            <div class="cards">
+            <p class="card-title">Money Maker</p>
+            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis sem vel aliquam.</p>
+
+
+            <div class="card-icons">
+                <img class="symbol" src="star-plus-outline.svg" alt="Favourite">
+                <img class="symbol" src="eye-plus-outline.svg" alt="Watch">
+                <img class="symbol" src="share-variant-outline.svg" alt="Share">
+            </div>
+            </div>
+</div>
+    </div>
+
+            <div class="side-column">
+                <h2>Announcements</h2>
+                <div class="column-cards">
+                    <p class="column-title">Site Maintenance</p>
+                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec henderit sodales congue...</p>
+                    <p class="column-title">Community Share Day</p>
+                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec henderit sodales congue...</p>
+                    <p class="column-title">Updated Privacy Policy</p>
+                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec henderit sodales congue...</p>
+                </div>
+
+                <div class="trending">
+
+                    <h2>Trending</h2>
+
+                    <div class="social-media">
+                    <img src="user-logo.svg" alt="">
+                    <p class="socials">@tegan</p>
+                    <p class="tagline">World Peace Builder</p>
+                    </div>
+
+                      <div class="social-media">
+                    <img src="user-logo.svg" alt="">
+                    <p class="socials">@AGR</p>
+                    <p class="tagline">Super Cool Project</p>
+                    </div>
+
+                      <div class="social-media">
+                    <img src="user-logo.svg" alt="">
+                    <p class="socials">@kendall</p>
+                    <p class="tagline">Life Changing App</p>
+                    </div>
+
+                           <div class="social-media">
+                    <img src="user-logo.svg" alt="">
+                    <p class="socials">@alex</p>
+                    <p class="tagline">No traffic Maker</p>
+                    </div>
+
+                </div>
+                </div>
+</main>
+
+        
+    
+</body>
+</html>
