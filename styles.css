@@ -4,12 +4,17 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
 .container{
     min-height: 100vh;
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr;
-    grid-template-areas:"sidebar header" 
+    grid-template-areas:"sidebar header"
     "sidebar main";
 }
 
@@ -17,12 +22,20 @@
     background-color: bisque;
     border: 2px solid black;
     grid-area: sidebar;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     background-color: aquamarine;
     border: 2px solid blue;
     grid-area: header;
+    padding: 15px;
+    gap: 15px;
 }
 
 main {
@@ -52,3 +65,50 @@ main {
     gap: 15px;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-row, .bottom-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
