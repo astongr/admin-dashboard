@@ -1,114 +1,187 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-blue: #1992d4;
+  --main-bg: #e2e8f0;
+  --accent: #f0b429;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
-.container{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:"sidebar header"
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar header"
     "sidebar main";
 }
 
 .sidebar {
-    background-color: bisque;
-    border: 2px solid black;
-    grid-area: sidebar;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  background-color: var(--primary-blue);
+  grid-area: sidebar;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    background-color: aquamarine;
-    border: 2px solid blue;
-    grid-area: header;
-    padding: 15px;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  grid-area: header;
+  padding: 30px;
+  gap: 15px;
 }
 
 main {
-    background-color: burlywood;
-    border: 2px solid orange;
-    grid-area: main;
-    display: flex;
+  background-color: var(--main-bg);
+  grid-area: main;
+  display: flex;
+  padding: 40px;
+  gap: 20px;
 }
 
 .main-cards {
-    flex: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .side-column {
-    background-color: dimgrey;
-    border: 2px solid coral;
-    flex: 0 0 400px;
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .symbol {
-    height: 15px;
+  height: 30px;
 }
 
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: white;
 }
 
-.top-row, .bottom-row{
-    display: flex;
-    justify-content: space-between;
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
 }
 
-.notification {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.notification,
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 20px;
 }
 
 .welcome {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-
 .buttons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+h1 {
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 8px solid var(--accent);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-icons {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.column-cards,
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #1992d4;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.username {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.hi {
+  color: grey;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 999px;
+  border: none;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.search-input:focus {
+  outline: 2px solid var(--accent);
 }
