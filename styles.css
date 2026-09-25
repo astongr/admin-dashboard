@@ -41,6 +41,7 @@ header {
   grid-area: header;
   padding: 30px;
   gap: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -59,7 +60,7 @@ main {
 }
 
 .side-column {
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -92,6 +93,12 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent);
 }
 
 .top-row,
@@ -104,7 +111,7 @@ nav a {
 .social-media {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .search-bar {
@@ -122,7 +129,8 @@ nav a {
 
 .buttons {
   display: flex;
-  gap: 10px;
+  gap: 30px;
+  align-items: center;
 }
 
 h1 {
@@ -132,12 +140,20 @@ h1 {
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 15px;
   background-color: white;
   padding: 15px;
   border-radius: 8px;
   border-left: 8px solid var(--accent);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.cards:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
 }
 
 .card-icons {
@@ -149,7 +165,7 @@ h1 {
 .trending {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   background-color: white;
   padding: 15px;
   border-radius: 8px;
@@ -159,9 +175,17 @@ h1 {
 button {
   background-color: #1992d4;
   color: white;
-  border-radius: 10px;
-  padding: 15px;
+  font-size: 1rem;
+  border-radius: 60px;
+  padding: 10px 12px;
   cursor: pointer;
+  min-width: 130px;
+  border: 3px solid transparent;
+}
+
+button:hover {
+  background-color: darkblue;
+  border: 3px solid var(--accent);
 }
 
 .username {
@@ -184,4 +208,35 @@ button {
 
 .search-input:focus {
   outline: 2px solid var(--accent);
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+}
+
+.column-title,
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.welcome-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
